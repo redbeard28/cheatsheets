@@ -5,35 +5,35 @@ cheatsheet do
 	source_url 'http://cheat.kapeli.com'
 
 	category do
-		id 'attach'
+		id 'docker container attach'
 
 		entry do
 			notes "__Attach to a running container__"
 		end
 
 		entry do
-			name "--detach-keys"
+			name "docker container attach --detach-keys"
 			notes "
 			```
 			Override the key sequence for detaching a container
 			```"
 		end
 		entry do
-			name "--help"
+			name "docker container attach --help"
 			notes "
 			```
 			Print usage
 			```"
 		end
 		entry do
-			name "--no-stdin"
+			name "docker container attach --no-stdin"
 			notes "
 			```
 			Do not attach STDIN
 			```"
 		end
 		entry do
-			name "--sig-proxy"
+			name "docker container attach --sig-proxy"
 			notes "
 			```
 			Proxy all received signals to the process (default true)
@@ -42,35 +42,35 @@ cheatsheet do
 	end
 
 	category do
-		id 'build'
+		id 'docker container build'
 
 		entry do
 			notes "__Build an image from a Dockerfile__"
 		end
 
 		entry do
-			name "--build-arg"
+			name "docker container build --build-arg"
 			notes "
 			```
 			Set build-time variables (default [])
 			```"
 		end
 		entry do
-			name "--cgroup-parent"
+			name "docker container build --cgroup-parent"
 			notes "
 			```
 			Optional parent cgroup for the container
 			```"
 		end
 		entry do
-			name "--cpu-period"
+			name "docker container build --cpu-period"
 			notes "
 			```
 			Limit the CPU CFS (Completely Fair Scheduler) period
 			```"
 		end
 		entry do
-			name "--cpu-quota"
+			name "docker container build --cpu-quota"
 			notes "
 			```
 			Limit the CPU CFS (Completely Fair Scheduler) quota

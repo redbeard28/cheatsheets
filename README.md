@@ -1,3 +1,9 @@
+
+![Travis-ci](https://api.travis-ci.org/redbeard28/cheatsheets.svg?branch=master&style=plastic)
+![GitHub release](https://img.shields.io/github/release/redbeard28/cheatsheets.svg?color=green&logo=github&style=plastic)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/redbeard28/cheatsheets.svg?style=plastic)
+![GitHub](https://img.shields.io/github/license/redbeard28/redbeard28.admin_tools.svg?style=plastic)
+
 Dash Cheat Sheets 
 ===========
 

@@ -7,4 +7,5 @@ git:
 before_install:
   - git submodule update --init --recursive
 install: sudo gem install cheatset --no-ri --no-rdoc
-script: find cheatsheets -name "*.rb" | xargs -n 1 cheatset generate
+#script: find cheatsheets -name "*.rb" | xargs -n 1 cheatset generate
+script: cd mycheats ; find cheatsheets -name "*.rb" | xargs -n 1 cheatset generate

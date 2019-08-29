@@ -12,28 +12,28 @@ cheatsheet do
 		end
 
 		entry do
-			name "docker container attach --detach-keys"
+			name "--detach-keys"
 			notes "
 			```
 			Override the key sequence for detaching a container
 			```"
 		end
 		entry do
-			name "docker container attach --help"
+			name "--help"
 			notes "
 			```
 			Print usage
 			```"
 		end
 		entry do
-			name "docker container attach --no-stdin"
+			name "--no-stdin"
 			notes "
 			```
 			Do not attach STDIN
 			```"
 		end
 		entry do
-			name "docker container attach --sig-proxy"
+			name "--sig-proxy"
 			notes "
 			```
 			Proxy all received signals to the process (default true)
@@ -49,28 +49,28 @@ cheatsheet do
 		end
 
 		entry do
-			name "docker container build --build-arg"
+			name "--build-arg"
 			notes "
 			```
 			Set build-time variables (default [])
 			```"
 		end
 		entry do
-			name "docker container build --cgroup-parent"
+			name "--cgroup-parent"
 			notes "
 			```
 			Optional parent cgroup for the container
 			```"
 		end
 		entry do
-			name "docker container build --cpu-period"
+			name "--cpu-period"
 			notes "
 			```
 			Limit the CPU CFS (Completely Fair Scheduler) period
 			```"
 		end
 		entry do
-			name "docker container build --cpu-quota"
+			name "--cpu-quota"
 			notes "
 			```
 			Limit the CPU CFS (Completely Fair Scheduler) quota
@@ -205,7 +205,7 @@ cheatsheet do
 	end
 
 	category do
-		id 'commit'
+		id 'docker container commit'
 
 		entry do
 			notes "__Create a new image from a container's changes__"
@@ -249,7 +249,7 @@ cheatsheet do
 	end
 
 	category do
-		id 'cp'
+		id 'docker container cp'
 
 		entry do
 			notes "__Copy files/folders between a container and the local filesystem__"
@@ -272,7 +272,7 @@ cheatsheet do
 	end
 
 	category do
-		id 'create'
+		id 'docker container create'
 
 		entry do
 			notes "__Create a new container__"
@@ -1336,28 +1336,28 @@ cheatsheet do
 	end
 
 	category do
-		id 'ps'
+		id 'docker container ls'
 
 		entry do
 			notes "__List containers__"
 		end
 
 		entry do
-			name "-n"
+			name "--last , -n"
 			notes "
 			```
 			int            Show n last created containers (includes all states) (default -1)
 			```"
 		end
 		entry do
-			name "-a"
+			name "--all , -a"
 			notes "
 			```
 			Show all containers (default shows just running)
 			```"
 		end
 		entry do
-			name "-f"
+			name "--filter , -f"
 			notes "
 			```
 			value    Filter output based on conditions provided (default [])
@@ -1378,7 +1378,7 @@ cheatsheet do
 			```"
 		end
 		entry do
-			name "-l"
+			name "--latest , -l"
 			notes "
 			```
 			Show the latest created container (includes all states)
@@ -1392,14 +1392,14 @@ cheatsheet do
 			```"
 		end
 		entry do
-			name "-q"
+			name "--quiet , -q"
 			notes "
 			```
 			Only display numeric IDs
 			```"
 		end
 		entry do
-			name "-s"
+			name "--size , -s"
 			notes "
 			```
 			Display total file sizes
@@ -1567,7 +1567,7 @@ cheatsheet do
 	end
 
 	category do
-		id 'run'
+		id 'docker container run'
 
 		entry do
 			notes "__Run a command in a new container__"
@@ -2456,30 +2456,70 @@ cheatsheet do
 	end
 
 	category do
-		id 'volume'
+		id 'docker volume'
 
 		entry do
 			notes "__Manage Docker volumes__"
 		end
 
-		entry do
-			name "--help"
-			notes "
+    entry do
+      name "docker volume --help"
+      notes "
 			```
 			Print usage
 			```"
-		end
+    end
+
+    entry do
+      name "docker volume ls"
+      notes "
+			```
+			List volumes
+			```"
+    end
+
+    entry do
+      name "docker volume prune"
+      notes "
+			```
+			Remove all unused local volumes
+			```"
+    end
+
+    entry do
+      name "docker volume rm"
+      notes "
+			```
+			Remove one or more volumes
+			```"
+    end
+
+    entry do
+      name "docker volume inspect"
+      notes "
+			```
+			Display detailed information on one or more volumes
+			```"
+    end
+
+    entry do
+      name "docker volume create"
+      notes "
+			```
+			Create a volume
+			```"
+    end
 	end
 
 	category do
-		id 'wait'
+		id 'docker container wait'
 
 		entry do
 			notes "__Block until a container stops, then print its exit code__"
 		end
 
 		entry do
-			name "--help"
+			name "docker container wait --help"
 			notes "
 			```
 			Print usage
@@ -2488,7 +2528,8 @@ cheatsheet do
 	end
 
 	notes <<-'END'
-		* Converted and extended by [jhezjkp](https://github.com/jhezjkp).
+		* Original work from [jhezjkp](https://github.com/jhezjkp).
+    * 28/08/2019: Upgraded docker commands by [redbeard28](https://github.com/redbeard28).
 	END
 
 end

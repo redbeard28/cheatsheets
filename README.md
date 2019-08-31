@@ -19,7 +19,7 @@ Cheat sheets are generated using [cheatset](https://github.com/Kapeli/cheatset#r
 I will make it easy to you !
 
 ````bash
-docker run -v /tmp/cheatsheets:/work -ti redbeard28/cheatset:0.1 Docker.rb
+docker run -v /tmp/cheatsheets:/work -ti redbeard28/cheatset:0.1 /work/cheatsheets/Docker.rb
 ````
 
 Please replace **/tmp/cheatsheets** path by yours.

@@ -7,26 +7,36 @@
 Dash Cheat Sheets 
 ===========
 
-The aim of this repo (forked from [kapeli source](https://github.com/Kapeli/cheatsheets)) is to have the possibility to make my own cheats sheets and keep updated the originals from the community.
+The aim of this repo is to have the possibility to make my own cheat sheets.
 
-If those docset inspire you, please feel free to clone and install.
+If those docset inspire you, please feel free to clone and install. Don't forget to put a star ;-).
 
 
-# Make Your Own
+## Make Your Own
 
-Cheat sheets are generated using [cheatset](https://github.com/Kapeli/cheatset#readme). Check out cheatset's [README](https://github.com/Kapeli/cheatset#readme) for instructions on how to make your own cheat sheet.
+Cheat sheets are generated using [cheatset](https://github.com/Kapeli/cheatset#readme).
+
+Check out cheatset's [README](https://github.com/Kapeli/cheatset#readme) for instructions on how to make your own cheat sheet.
+
+## Generator
 
 I will make it easy to you !
 
 ````bash
-docker run -v /tmp/cheatsheets:/work -ti redbeard28/cheatset:0.1 /work/cheatsheets/Docker.rb
+docker run -v /tmp/cheatsheets:/work -ti redbeard28/cheatset:latest /work/cheatsheets/Docker.rb
 ````
 
+Explainations:
+
+ * **-v /tmp/cheatsheets:/work** => Mount local path **/tmp/cheatsheets to container filesystem in **/work**
+ * **redbeard28/cheatset:latest** => My Docker image from docker hub.
+ * **/work/cheatsheets/Docker.rb** => Container local path where to found ther *.rb files
+ 
 Please replace **/tmp/cheatsheets** path by yours.
 
 # Why I am using Dash/Zeal/Velocity
-I want to make my own docset to be able to store and share my knowledge.
+I want to make my own cheatsheets to be able to store and share my knowledge.
 
 # Special thanks
  * To the creator of [Dash](https://kapeli.com/dash)
- * To the community for the docset 
+ * To the community for the [cheatsheets]() 
